@@ -79,7 +79,11 @@ WSGI_APPLICATION = 'petstagram.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'AZURE_MYSQL_NAME': 'petsrn-test-database',
+        'AZURE_MYSQL_USER': 'isjetmqpoc',
+        'AZURE_MYSQL_PASSWORD': '51I37O48JJN1JV72$',
+        'AZURE_MYSQL_HOST': 'petsrn-test-server.mysql.database.azure.com',
+        'SCM_DO_BUILD_DURING_DEPLOYMENT': '1'
     }
 }
 
